@@ -1,14 +1,25 @@
 {
-    "family": FAMILY,
+    "family": "FAMILY",
     "containerDefinitions": [
         {
             "image": "REPOSITORY_URI:BUILD_NUMBER",
-            "name": NAME,
-	    "essential": true,
+            "name": "NAME",
+            "essential": true,
             "portMappings": [
                 {
                     "containerPort": 3000,
                     "hostPort": 3000
+                }
+            ]
+        },
+        {
+            "image": "docker.io/library/httpd:latest",  // Replace this with your Apache image
+            "name": "apache-container",
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 80,
+                    "hostPort": 80
                 }
             ]
         }
@@ -16,8 +27,9 @@
     "cpu": "256",
     "memory": "512",
     "requiresCompatibilities": [
-             "FARGATE"
+        "FARGATE"
     ],
     "networkMode": "awsvpc",
-    "executionRoleArn": ROLE_ARN 
+    "executionRoleArn": "ROLE_ARN"
 }
+
