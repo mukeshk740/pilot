@@ -13,7 +13,7 @@
             ]
         },
         {
-            "image": "docker.io/library/httpd:latest",  // Replace this with your Apache image
+            "image": "docker.io/library/httpd:latest",
             "name": "apache-container",
             "essential": true,
             "portMappings": [
