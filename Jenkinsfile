@@ -3,7 +3,7 @@ pipeline {
     environment {
         AWS_ACCOUNT_ID="664418988179"
         AWS_DEFAULT_REGION="us-east-1"
-	    CLUSTER_NAME="pilot"
+	    CLUSTER_NAME="Pilot"
 	    SERVICE_NAME="pilot"
 	    TASK_DEFINITION_NAME="pilot"
 	    DESIRED_COUNT="1"
