@@ -7,7 +7,7 @@ pipeline {
 	    SERVICE_NAME="pilot-test"
 	    TASK_DEFINITION_NAME="pilot-test"
 	    DESIRED_COUNT="1"
-        IMAGE_REPO_NAME="664418988179.dkr.ecr.us-east-1.amazonaws.com/pilot"
+        IMAGE_REPO_NAME="664418988179.dkr.ecr.us-east-1.amazonaws.com/pilot-test"
         //Do not edit the variable IMAGE_TAG. It uses the Jenkins job build ID as a tag for the new image.
         IMAGE_TAG="${env.BUILD_ID}"
         //Do not edit REPOSITORY_URI.
